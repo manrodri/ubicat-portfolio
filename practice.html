@@ -4,57 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rosie Ellis</title>
-    <link href="https://fonts.googleapis.com/css2?family=Piedra&family=Roboto:wght@300;400;700&display=swap"
-          rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-    <!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="practice.css">
 </head>
 <body>
 <header>
-    <div class="menu-toggler">
-        <div class="bar half start"></div>
-        <div class="bar"></div>
-        <div class="bar half end"></div>
-    </div>
-    <nav class="top-nav">
-        <ul class="nav-list">
-            <li>
-                <a href="index.html" class="nav-link">Home</a>
+<!--    <div class="menu-toggler">-->
+<!--        <div class="bar half start"></div>-->
+<!--        <div class="bar"></div>-->
+<!--        <div class="bar half end"></div>-->
+<!--    </div>-->
+
+    <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="index.html" class="nav__item">Home</a>
             </li>
-            <li>
-                <a href="#about" class="nav-link">About</a>
+            <li class="nav__item">
+                <a href="#about" class="nav__item">About</a>
             </li>
-            <li>
-                <a href="#services" class="nav-link">Services</a>
+            <li class="nav__item">
+                <a href="#services" class="nav__item">Services</a>
             </li>
-            <li>
-                <a href="#portfolio" class="nav-link">Portfolio</a>
+            <li class="nav__item">
+                <a href="#portfolio" class="nav__item">Portfolio</a>
             </li>
-            <li>
-                <a href="#experience" class="nav-link">Experience</a>
+            <li class="nav__item">
+                <a href="#experience" class="nav__item">Experience</a>
             </li>
-            <li>
-                <a href="#contact" class="nav-link">Contact</a>
+            <li class="nav__item">
+                <a href="#contact" class="nav__item">Contact</a>
             </li>
         </ul>
     </nav>
+</header>
+
+<section>
     <div class="landing-text">
         <h1>Ubica-t</h1>
         <h6>Lorem ipsum dolor sit amet</h6>
     </div>
-</header>
+</section>
 
 <section class="about" id="about">
     <div class="container">
-        <div class="profile-img " data-aos="fade-right" data-aos-delay="300">
+        <div class="profile-img">
             <img src="images/profile.jpeg" alt="">
         </div>
-        <div class="about-details" data-aos="fade-left" data-aos-delay="600">
+        <div class="about-details">
             <div class="about-heading">
-                <h1>Sobre</h1>
+                <h1>About</h1>
                 <h6>Nosotros</h6>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum exercitationem nobis quisquam rem sit,
@@ -63,33 +67,32 @@
                 um exercitationem nobis quisquam sum dolor sit amet, consectetur adipisicing elit. Eum exercitationem
                 nobis quisquam
             </p>
-            <div class="social-media">
-                <ul class="nav-list">
-                    <li>
-                        <a href="#" class="icon-link"><i class="fab fa-facebook-square"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon-link"><i class="fab fa-twitter-square"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon-link"><i class="fab fa-linkedin"></i></a>
-                    </li>
-                </ul>
-            </div>
         </div>
-
+        <div class="social-media">
+            <ul class="nav-list">
+                <li>
+                    <a href="#" class="icon-link"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li>
+                    <a href="#" class="icon-link"><i class="fab fa-twitter-square"></i></a>
+                </li>
+                <li>
+                    <a href="#" class="icon-link"><i class="fab fa-dribbble-square"></i></a>
+                </li>
+            </ul>
+        </div>
     </div>
 </section>
 <section class="services" id="services">
     <div class="container">
         <div class="section-heading">
-            <h1>Servicios</h1>
-            <h6>Lo que podemos hacer por ti</h6>
+            <h1>Services</h1>
+            <h6>what I can do for you</h6>
         </div>
         <div class="my-skills">
-            <div class="skill" data-aos="fade-in" data-aos-delay="300">
+            <div class="skill">
                 <div class="icon-container">
-                    <i class="fas fa-layer-group"></i>
+                    <i class="fas-fa-layer-gruop"></i>
                 </div>
                 <h1>Web Design</h1>
                 <p>
@@ -97,9 +100,9 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </p>
             </div>
-            <div class="skill" data-aos="fade-in" data-aos-delay="600">
+            <div class="skill">
                 <div class="icon-container">
-                    <i class="fas fa-code"></i>
+                    <i class="fas-fa-layer-gruop"></i>
                 </div>
                 <h1>Web development</h1>
                 <p>
@@ -107,9 +110,9 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </p>
             </div>
-            <div class="skill" data-aos="fade-in" data-aos-delay="900">
+            <div class="skill">
                 <div class="icon-container">
-                    <i class="fas fa-chart-bar"></i>
+                    <i class="fas-fa-layer-gruop"></i>
                 </div>
                 <h1>Product Strategy</h1>
                 <p>
@@ -128,10 +131,10 @@
             <h6>View some of my recent work</h6>
         </div>
         <div class="portfolio-item">
-            <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
+            <div class="portfolio-img">
                 <img src="images/portitem1.jpeg" alt="">
             </div>
-            <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
+            <div class="portfolio-description">
                 <h6>Web Development</h6>
                 <h1>Blog Website</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -141,7 +144,7 @@
             </div>
         </div>
         <div class="portfolio-item">
-            <div class="portfolio-description has-margin-right" data-aos="fade-left" data-aos-delay="900">
+            <div class="portfolio-description">
                 <h6>Web Design</h6>
                 <h1>Product Layout</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -149,16 +152,16 @@
                 </p>
                 <a href="#" class="cta">View details</a>
             </div>
-            <div class="portfolio-img" data-aos="fade-right" data-aos-delay="1200">
+            <div class="portfolio-img">
                 <img src="images/portitem2.jpeg" alt="">
             </div>
 
         </div>
         <div class="portfolio-item">
-            <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="1500">
+            <div class="portfolio-img">
                 <img src="images/portitem3.jpeg" alt="">
             </div>
-            <div class="portfolio-description" data-aos="fade-left" data-aos-delay="1800">
+            <div class="portfolio-description">
                 <h6>Web Design</h6>
                 <h1>Product Sketch</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -176,9 +179,9 @@
             <h1>Experience</h1>
             <h6>Past and current Jobs</h6>
         </div>
-        <div class="timeline" data-aos="fade-down" data-aos-delay="300">
+        <div class="timeline">
             <ul>
-                <li class="date" data-date="2011 - Now">
+                <li class="date" data-date="2011 - Present">
                     <h1>Google</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -210,11 +213,17 @@
             <h1>Contact</h1>
             <h6>Contact me here</h6>
         </div>
-        <form action="mailto:lolo.edinburgh@gmail.com"  method="POST"  enctype="text/plain" data-aos="fade-up" data-aos-delay="300">
+        <form action="">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your name..." required>
-            <label for="email">Email:</label>
+            <label for="email">Name:</label>
             <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+            <label for="service">Services:</label>
+            <select name="services" id="service">
+                <option value="">Web Design</option>
+                <option value="">Web Development</option>
+                <option value="">Web Design/Development</option>
+            </select>
             <label for="subject">Subject:</label>
             <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
             <input type="submit" value="submit">
@@ -226,12 +235,12 @@
 <footer class="copyright">
     <div class="up" id="up">
         <i class="fas fa-chevron-up"></i>
+        <p>&copy; 2020 Ubica-t</p>
     </div>
-    <p>&copy; 2020 Ubica-t</p>
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="main.js"></script>
+<script src="practice.js"></script>
 </body>
 </html>
